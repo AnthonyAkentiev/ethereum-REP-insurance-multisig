@@ -27,11 +27,17 @@ The official Augur contract address is [0x48c80F1f4D53D5951e5D5438B54Cba84f29F32
 
 1. Go to **Contracts**:
 [![1.jpg](https://s16.postimg.org/ai05qvyg5/image.jpg)](https://postimg.org/image/8q76vzf35/)
-2. Click on **Deploy New Contract**:
+2. Click on **Deploy New Contract** button:
 [![2.jpg](https://s18.postimg.org/5jdabdvd5/image.jpg)](https://postimg.org/image/p17xrbsat/)
 
-## Step 5 - 
+## Step 5 - Deploy the Contract
 
+Copy the contract code is [here](https://raw.githubusercontent.com/AnthonyAkentiev/ethereum-REP-insurance-multisig/master/contracts/MultiSig.sol).
+
+1. Click on **Deploy** button:
+[![2_2.jpg](https://s11.postimg.org/j3x61v4oj/2_2.jpg)](https://postimg.org/image/gmleulkrz/)
+2. Click on **Send Transaction** button:
+[![3.jpg](https://s22.postimg.org/ho4rj1f7l/image.jpg)](https://postimg.org/image/jfxqdxykd/)
 
 
 
