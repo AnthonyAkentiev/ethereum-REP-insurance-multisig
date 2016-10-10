@@ -38,7 +38,7 @@ Go to **Contracts** and then click on **Deploy New Contract** button:
 
 ## Step 5 - Deploy the Contract
 
-Copy the contract code is [here](https://raw.githubusercontent.com/AnthonyAkentiev/ethereum-REP-insurance-multisig/master/contracts/MultiSig.sol).
+Copy the contract code. [Get it here](https://raw.githubusercontent.com/AnthonyAkentiev/ethereum-REP-insurance-multisig/master/contracts/MultiSig.sol).
 
 1. Click on **Deploy** button:
 [![2_2.jpg](https://s11.postimg.org/j3x61v4oj/2_2.jpg)](https://postimg.org/image/gmleulkrz/)
