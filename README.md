@@ -1,5 +1,44 @@
 # Contract Specification
 
+## Installation 
+
+```bash
+# Install/create virtualenv (one-time only)
+sudo pip install virtualenv
+virtualenv venv
+
+source venv/bin/active
+pip install -r requirements.txt
+pip install -r requirements-dev.txt
+deactivate
+```
+
+## Running tests
+
+```bash
+# Start working in virtualenv (see installation details on how to prepare virtualenv) 
+source venv/bin/active
+
+cd tests/python
+
+py.test -s 
+
+# Exit virtualenv
+deactivate
+```
+
+## How to deploy contract
+
+1. Deploy StandardToken.sol contract or get the adress of existing one.
+
+For each 'escrow' operation:
+1. Deploy MultiSig.sol contract. 
+     For example - lets set **ethDepositMinimum = 0.5** and **tokenDepositMinimum = 100**
+2. User1 should send 0.5 Eth to contract by calling **depositEther** function.
+3. User2 should call **depositToken** function. This will transfer his 100 REP tokens to current contract.
+4. Arbiter should call **lock** function.
+5. Wait until 
+
 ## Contract Data:
 
 * `address partyA`
@@ -70,6 +109,10 @@ The contract can be in the following states if the listed conditions are met.
 * NeverLocked
     * Was not locked by `arbiter`
     * At or After `unlockAt`.
+
+## State Diagram
+
+[![Screen Shot 2016-10-09 at 14.47.25.png](https://s14.postimg.org/895pgydf5/Screen_Shot_2016_10_09_at_14_47_25.png)](https://postimg.org/image/ul3iaccj1/)
 
 
 At deployment contract is in *Genesis* state.
