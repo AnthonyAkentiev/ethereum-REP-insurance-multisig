@@ -31,10 +31,8 @@ The official Augur contract address is [0x48c80F1f4D53D5951e5D5438B54Cba84f29F32
 
 ## Step 4 - Start your Etherum Wallet
 
-1. Go to **Contracts**:
-[![1.jpg](https://s16.postimg.org/ai05qvyg5/image.jpg)](https://postimg.org/image/8q76vzf35/)
-2. Click on **Deploy New Contract** button:
-[![2.jpg](https://s18.postimg.org/5jdabdvd5/image.jpg)](https://postimg.org/image/p17xrbsat/)
+Go to **Contracts** and then click on **Deploy New Contract** button:
+[![2.jpg](https://s10.postimg.org/tnr95scs9/image.jpg)](https://postimg.org/image/9t57jnxkl/)
 
 ---
 
