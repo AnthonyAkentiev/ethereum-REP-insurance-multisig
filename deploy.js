@@ -107,9 +107,6 @@ web3.eth.getAccounts(function(err, accounts) {
 
                          var contract = web3.eth.contract(abi).at(result.contractAddress);
 
-                         //console.log('Contract: ');
-                         //console.log(contract);
-
                          // TODO:
                          console.log('Calling someTestMethod');
                          var out = contract.someTestMethod();

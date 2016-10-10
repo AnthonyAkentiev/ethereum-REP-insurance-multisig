@@ -32,19 +32,6 @@ py.test -s
 deactivate
 ```
 
-## How to deploy contract
-
-1. Deploy StandardToken.sol contract or get the adress of existing one that conforms to ERC20 standard.
-
-For each 'escrow' operation:
-
-1. Deploy MultiSig.sol contract. 
-     For example - lets set **ethDepositMinimum = 0.5** and **tokenDepositMinimum = 100**
-2. User1 should send 0.5 Eth to contract by calling **depositEther** function.
-3. User2 should call **depositToken** function. This will transfer his 100 REP tokens to current contract.
-4. Arbiter should call **lock** function.
-5. Wait until 
-
 ## Contract Data:
 
 * `address partyA`
