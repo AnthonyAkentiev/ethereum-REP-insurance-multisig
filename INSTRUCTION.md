@@ -5,6 +5,8 @@
 PartyB should have REP tokens held by Augur contract.
 The official Augur contract address is [0x48c80F1f4D53D5951e5D5438B54Cba84f29F32a5](https://etherscan.io/address/0x48c80F1f4D53D5951e5D5438B54Cba84f29F32a5).
 
+---
+
 ## Step 2 - Prepare PartyA, PartyB, Arbiter addresses
 
 **PartyA** is who sends the ETH.
@@ -12,6 +14,8 @@ The official Augur contract address is [0x48c80F1f4D53D5951e5D5438B54Cba84f29F32
 **PartyB** is who sends REP tokens.
 
 **Arbiter** is the third party. Please use Anthony Akentiev address **0xbD997Cd2513c5f031b889d968de071eeaFE07130**.
+
+---
 
 ## Step 3 - Prepare 3 Rescuers addresses
 
@@ -23,12 +27,16 @@ The official Augur contract address is [0x48c80F1f4D53D5951e5D5438B54Cba84f29F32
 
 **Rescuer3** - please use Piper Merriam address - **TODO**.
 
+---
+
 ## Step 4 - Start your Etherum Wallet
 
 1. Go to **Contracts**:
 [![1.jpg](https://s16.postimg.org/ai05qvyg5/image.jpg)](https://postimg.org/image/8q76vzf35/)
 2. Click on **Deploy New Contract** button:
 [![2.jpg](https://s18.postimg.org/5jdabdvd5/image.jpg)](https://postimg.org/image/p17xrbsat/)
+
+---
 
 ## Step 5 - Deploy the Contract
 
