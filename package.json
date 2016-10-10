@@ -1,0 +1,32 @@
+{
+  "name": "Ethereum-REP-insurance-multisig",
+  "version": "0.9.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "ethereumjs-abi": "^0.6.4",
+    "ethereumjs-testrpc": "^3.0.0",
+    "fs": "latest",
+    "pug": "latest",
+    "solc": "latest",
+    "web3": "latest"
+  },
+  "engines": {
+    "node": "5.10.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AnthonyAkentiev/ethereum-REP-insurance-multisig"
+  },
+  "keywords": [
+    "ethereum",
+    "blockchain",
+    "token",
+    "insurance",
+    "rep"
+  ],
+  "license": "MIT"
+}

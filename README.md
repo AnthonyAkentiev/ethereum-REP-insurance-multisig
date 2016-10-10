@@ -29,9 +29,10 @@ deactivate
 
 ## How to deploy contract
 
-1. Deploy StandardToken.sol contract or get the adress of existing one.
+1. Deploy StandardToken.sol contract or get the adress of existing one that conforms to ERC20 standard.
 
 For each 'escrow' operation:
+
 1. Deploy MultiSig.sol contract. 
      For example - lets set **ethDepositMinimum = 0.5** and **tokenDepositMinimum = 100**
 2. User1 should send 0.5 Eth to contract by calling **depositEther** function.

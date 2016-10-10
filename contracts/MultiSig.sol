@@ -1,8 +1,17 @@
 //pragma solidity ^0.4.0;
 
+contract TokenInterface {
+    // This is not an abstract function, because solc won't recognize generated getter functions for public variables as functions
+    function totalSupply() constant returns (uint256 supply);
+    function balanceOf(address owner) constant returns (uint256 balance);
+    function transfer(address to, uint256 value) returns (bool success);
+    function transferFrom(address from, address to, uint256 value) returns (bool success);
+    function approve(address spender, uint256 value) returns (bool success);
+    function allowance(address owner, address spender) constant returns (uint256 remaining);
 
-import {TokenInterface} from "contracts/TokenInterface.sol";
-
+    event Transfer(address indexed from, address indexed to, uint256 value);
+    event Approval(address indexed owner, address indexed spender, uint256 value);
+}
 
 contract MultiSignature {
     // The party who is depositing ether
@@ -168,7 +177,7 @@ contract MultiSignature {
      */
     modifier inState(State state) {
         if (currentState() == state) {
-            _
+            _;
         } else {
             throw;
         }
@@ -181,7 +190,7 @@ contract MultiSignature {
     modifier inState2(State stateA, State stateB) {
         var _currentState = currentState();
         if (_currentState == stateA || _currentState == stateB) {
-            _
+            _;
         } else {
             throw;
         }
@@ -194,8 +203,8 @@ contract MultiSignature {
     modifier inState3(State stateA, State stateB, State stateC) {
         var _currentState = currentState();
         if (_currentState == stateA || _currentState == stateB || _currentState == stateC) {
-            _
-            // _;  // if solc 0.4.x
+            _;
+            // _  // if solc 0.3.x
         } else {
             throw;
         }
@@ -206,8 +215,8 @@ contract MultiSignature {
      */
     modifier onlyArbiter {
         if (msg.sender == arbiter) {
-            _
-            // _;  // if solc 0.4.x
+            _;
+            // _  // if solc 0.3.x
         } else {
             throw;
         }
@@ -218,8 +227,8 @@ contract MultiSignature {
      */
     modifier onlyPartyA {
         if (msg.sender == partyA) {
-            _
-            // _;  // if solc 0.4.x
+            _;
+            // _  // if solc 0.3.x
         } else {
             throw;
         }
@@ -230,8 +239,8 @@ contract MultiSignature {
      */
     modifier onlyPartyB {
         if (msg.sender == partyB) {
-            _
-            // _;  // if solc 0.4.x
+            _;
+            // _  // if solc 0.3.x
         } else {
             throw;
         }
@@ -242,8 +251,8 @@ contract MultiSignature {
      */
     modifier beforeUnlock {
         if (now < unlockAt) {
-            _
-            // _;  // if solc 0.4.x
+            _;
+            // _  // if solc 0.3.x
         } else {
             throw;
         }
@@ -254,8 +263,8 @@ contract MultiSignature {
      */
     modifier noEther {
         if (msg.value == 0) {
-            _
-            // _;  // if solc 0.4.x
+            _;
+            // _  // if solc 0.3.x
         } else {
             throw;
         }
@@ -267,7 +276,8 @@ contract MultiSignature {
      */
     modifier onlyTrapdoorMultiSig {
         if (msg.sender == trapdoorA || msg.sender == trapdoorB || msg.sender == trapdoorC) {
-            _
+            _;
+            // _  // if solc 0.3.x
         } else {
             throw;
         }
@@ -494,6 +504,10 @@ contract MultiSignature {
             arbiterVote = _who;
             return true;
         }
+    }
+
+    function someTestMethod()public constant returns(uint32){
+         return 42;
     }
 
     event TrapdoorInitiated(address _from, bytes32 _hash);
