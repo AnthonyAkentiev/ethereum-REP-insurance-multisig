@@ -3,6 +3,12 @@
 ## Installation 
 
 ```bash
+# install special dependences
+apt-get install libffi-dev autoconf libtool
+sudo add-apt-repository ppa:ethereum/ethereum
+sudo apt-get update
+sudo apt-get install solc
+
 # Install/create virtualenv (one-time only)
 sudo pip install virtualenv
 virtualenv venv
@@ -19,8 +25,7 @@ deactivate
 # Start working in virtualenv (see installation details on how to prepare virtualenv) 
 source venv/bin/active
 
-cd tests/python
-
+cd .
 py.test -s 
 
 # Exit virtualenv
