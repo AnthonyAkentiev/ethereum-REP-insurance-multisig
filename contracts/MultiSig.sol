@@ -357,7 +357,7 @@ contract MultiSignature {
     }
 
     /*
-     *  Function for partyA to recover their tokens
+     *  Function for partyB to recover their tokens
      */
     function refundTokens() public
                             noEther

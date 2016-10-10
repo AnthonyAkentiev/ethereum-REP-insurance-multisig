@@ -1,0 +1,4 @@
+web3==3.0.2
+ethereum==1.5.3
+eth-testrpc==0.8.7
+
