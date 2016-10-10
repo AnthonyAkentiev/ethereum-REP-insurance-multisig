@@ -168,7 +168,7 @@ contract MultiSignature {
      */
     modifier inState(State state) {
         if (currentState() == state) {
-            _
+            _;
         } else {
             throw;
         }
@@ -181,7 +181,7 @@ contract MultiSignature {
     modifier inState2(State stateA, State stateB) {
         var _currentState = currentState();
         if (_currentState == stateA || _currentState == stateB) {
-            _
+            _;
         } else {
             throw;
         }
@@ -194,7 +194,7 @@ contract MultiSignature {
     modifier inState3(State stateA, State stateB, State stateC) {
         var _currentState = currentState();
         if (_currentState == stateA || _currentState == stateB || _currentState == stateC) {
-            _
+            _;
             // _;  // if solc 0.4.x
         } else {
             throw;
@@ -206,7 +206,7 @@ contract MultiSignature {
      */
     modifier onlyArbiter {
         if (msg.sender == arbiter) {
-            _
+            _;
             // _;  // if solc 0.4.x
         } else {
             throw;
@@ -218,7 +218,7 @@ contract MultiSignature {
      */
     modifier onlyPartyA {
         if (msg.sender == partyA) {
-            _
+            _;
             // _;  // if solc 0.4.x
         } else {
             throw;
@@ -230,7 +230,7 @@ contract MultiSignature {
      */
     modifier onlyPartyB {
         if (msg.sender == partyB) {
-            _
+            _;
             // _;  // if solc 0.4.x
         } else {
             throw;
@@ -242,7 +242,7 @@ contract MultiSignature {
      */
     modifier beforeUnlock {
         if (now < unlockAt) {
-            _
+            _;
             // _;  // if solc 0.4.x
         } else {
             throw;
@@ -254,7 +254,7 @@ contract MultiSignature {
      */
     modifier noEther {
         if (msg.value == 0) {
-            _
+            _;
             // _;  // if solc 0.4.x
         } else {
             throw;
@@ -267,7 +267,7 @@ contract MultiSignature {
      */
     modifier onlyTrapdoorMultiSig {
         if (msg.sender == trapdoorA || msg.sender == trapdoorB || msg.sender == trapdoorC) {
-            _
+            _;
         } else {
             throw;
         }
