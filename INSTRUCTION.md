@@ -37,15 +37,9 @@ Copy the contract code is [here](https://raw.githubusercontent.com/AnthonyAkenti
 1. Click on **Deploy** button:
 [![2_2.jpg](https://s11.postimg.org/j3x61v4oj/2_2.jpg)](https://postimg.org/image/gmleulkrz/)
 2. Click on **Send Transaction** button:
-[![3.jpg](https://s22.postimg.org/ho4rj1f7l/image.jpg)](https://postimg.org/image/jfxqdxykd/)
+[![4.jpg](https://s16.postimg.org/t8ilgrzdx/image.jpg)](https://postimg.org/image/ag6qd72zl/)
 
 
 
-For each "escrow" operation:
 
-1. Deploy MultiSig.sol contract. 
-     For example - lets set **ethDepositMinimum = 0.5** and **tokenDepositMinimum = 100**
-2. User1 should send 0.5 Eth to contract by calling **depositEther** function.
-3. User2 should call **depositToken** function. This will transfer his 100 REP tokens to current contract.
-4. Arbiter should call **lock** function.
-5. Wait until 
+
